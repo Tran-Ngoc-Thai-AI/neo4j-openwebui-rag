@@ -3,14 +3,15 @@ from pydantic import BaseModel
 from neo4j import GraphDatabase
 import requests
 import re
+import os
 
 # =================================
 # CONFIG
 # =================================
 
-NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASS = "password"
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://neo4j:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASS = os.getenv("NEO4J_PASSWORD", "password")
 
 # OPENAI_URL = "http://localhost:11434/api/generate"
 # OPENAI_MODEL = "qwen2.5-1.5b"
