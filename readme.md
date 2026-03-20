@@ -14,15 +14,6 @@ Hệ thống demo **RAG (Retrieval-Augmented Generation)** sử dụng:
 docker-compose up -d
 ```
 
----
-
-## 🌐 Services
-
-| Service     | URL                   |
-| ----------- | --------------------- |
-| Neo4j       | http://localhost:7474 |
-| Open WebUI  | http://localhost:3000 |
-| Backend API | http://localhost:8000 |
 
 ---
 
@@ -233,28 +224,4 @@ Luôn trích dẫn nguồn luật.
 User → Open WebUI → Tool (Backend API) → Neo4j → LLM → Response
 ```
 
----
 
-## 📌 Notes
-
-* `host.docker.internal` dùng để gọi backend từ container
-* Có thể mở rộng:
-
-  * Thêm embedding
-  * Thêm vector DB
-  * Hybrid search (Graph + Vector)
-
----
-
-## ⭐ Future Improvements
-
-* [ ] Add vector search (FAISS / PGVector)
-* [ ] Add authentication
-* [ ] Improve prompt engineering
-* [ ] UI customization
-
----
-
-## 👨‍💻 Author
-
-* Neo4j + RAG Demo Project
